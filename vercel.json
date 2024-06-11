@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "odoo-bin",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/odoo-16.0/(.*)",
+      "dest": "odoo-bin"
+    }
+  ]
+}
